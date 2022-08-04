@@ -1,6 +1,6 @@
-# Estruturas de Decisão [IF Ternário]
+# Estruturas de Decisão [Operador Ternário]
 
-##### IF ternário - O que é?
+##### Operador ternário - O que é?
 
 * **_Conditional Ternary Operator_**
 * Existem operações unárias, binárias, ternárias...
@@ -25,22 +25,22 @@
   - _Consequentemente, três variáveis de entrada._
   - Exemplos:
     * Estruturas de Decisão - Programação (JavaScript)
-    * if-else
+    * Equivalente ao if-else
       * **<condição> ? <valor_se_verdadeiro> : <valor_se_falso>**
       * **<condição> ? <operação_1> : <operação_2>**
-    * if-else aninhado
+    * Equivalente ao if-else aninhado
       * **<condição> ? <operação_1>**
         **: <outra_condição> ? <operação_2>**
         **: <operação_3>**
 
 
-Objetivo é, com if ternário, obter a seguinte estrutura:
+Objetivo é, com operador ternário, obter a seguinte estrutura:
 * _condição ? valor verdadeiro : valor falso_
 
-Ou então, quando necessário aninhar if ternário:
+Ou então, quando necessário aninhar operador ternário:
 * _condição ? valor verdadeiro : nova condição ? valor verdadeiro : valor falso_
 
-> **_O maior ganho ao utilizar if ternário é a economia de linhas!_**
+> **_O maior ganho ao utilizar operador ternário é a economia de linhas!_**
 
 ### Exemplos
 * [Exemplo 1](exemploIf_01.html)
