@@ -57,3 +57,6 @@ Ou então, quando necessário aninhar operador ternário:
 ##### Vídeos de apoio
 * [YouTube CFTv - Operador Ternário](https://www.youtube.com/watch?v=YjEtiFi2k7g)
 * [YouTube Dev Aprender - Operador Ternário](https://www.youtube.com/watch?v=Mbwg0YIZwYo)
+
+##### Dúvidas da comunidade sobre if-else
+* [Stack Overflow - if else](https://pt.stackoverflow.com/questions/4907/como-funciona-este-if-else-com-e)
