@@ -8,11 +8,48 @@
     // Apresente o salário final recebido pelo funcionário semanalmente e o preço de cada hora trabalhada.
 
     //Entrada
-
+    const horasTrabalhadas = parseFloat(prompt("Informe a quantidade de horas trabalhadas:"))
+    const valorHoraTrabalhada = parseFloat(prompt("Qual o custo da hora trabalhada?"))
+    let percentagemAdicional
 
     //Processamento
+    //Usando if-else
+    // if (horasTrabalhadas <= 45) {
+    //     percentagemAdicional = 0
+    // }
+    // else if (horasTrabalhadas <= 60) {
+    //     percentagemAdicional = 20
+    // }
+    // else {
+    //     percentagemAdicional = 30
+    // }
 
+    // Usando if-else otimizado
+    // if (horasTrabalhadas <= 45) percentagemAdicional = 0
+    // else if (horasTrabalhadas <= 60) percentagemAdicional = 20
+    // else percentagemAdicional = 30;
+
+    //Usando operador ternário aninhado
+    (horasTrabalhadas <= 45) ? percentagemAdicional = 0
+    : (horasTrabalhadas <= 60) ? percentagemAdicional = 20
+    : percentagemAdicional = 30;
+
+    //Usando operador ternário aninhado otimizado
+    // percentagemAdicional = (horasTrabalhadas <= 45) ? 0
+    // : (horasTrabalhadas <= 60) ? 20
+    // : 30;
     
+    const valorSemana = horasTrabalhadas * valorHoraTrabalhada
+    const valorAdicional = valorSemana * percentagemAdicional / 100
+    const valorFinal = valorSemana + valorAdicional
+    const valorHora = valorFinal / horasTrabalhadas
+
+    //Proposta de código resumido para operações acima
+    // const valorFinal = horasTrabalhadas * valorAdicional + (horasTrabalhadas * valorAdicional * (percentagemAdicional / 100))
+    // const valorHora = valorFinal / horasTrabalhadas
+
     //Saída
+    document.write(`O salário final será de R$ ${valorFinal.toFixed(2)}<br>`)
+    document.write(`O valor final pago por hora será de ${valorHora.toFixed(2)}`)
 
 </script>

@@ -4,11 +4,37 @@
     //Leia a idade de uma pessoa e informe se ela já chegou à maioridade.Se ela ainda não chegou, informe quantos anos faltam para a maioridade.
 
     //Entrada
-
+    const idade = parseInt(prompt("Informe sua idade:"))
+    let mensagemFinal = ""
 
     //Processamento
+    //Usando if-else aninhado
+    const faltaPara18 = 18 - idade;
+    // if (faltaPara18 > 1) {
+    //     mensagemFinal = "Faltam " + faltaPara18 + " anos para a maioridade!"
+    // }
+    // else if (faltaPara18 === 1) {
+    //     mensagemFinal = "Falta 1 ano para a maioridade!"
+    // }
+    // else {
+    //     mensagemFinal = "A pessoa já atingiu a maioridade!"
+    // }
 
+    //Usando if-else aninhado otimizado
+    // if (faltaPara18 > 1 ) mensagemFinal = "Faltam " + faltaPara18 + " anos para a maioridade!"
+    // else if (faltaPara18 === 1) mensagemFinal = "Falta 1 ano para a maioridade!"
+    // else mensagemFinal = "A pessoa já atingiu a maioridade!"
 
-    //Saída
+    //Usando operador ternário aninhado
+    (faltaPara18 > 1) ? mensagemFinal = "Faltam " + faltaPara18 + " anos para a maioridade!"
+    : (faltaPara18 === 1) ? mensagemFinal = "Falta 1 ano para a maioridade!"
+    : mensagemFinal = "A pessoa já atingiu a maioridade!"
+
+    //Usando operador ternário aninhado otimizado
+    // mensagemFinal = (faltaPara18 > 1) ? "Faltam " + faltaPara18 + " anos para a maioridade!"
+    // : (faltaPara18 === 1) ? "Falta 1 ano para a maioridade!"
+    // : "A pessoa já atingiu a maioridade"
     
+    //Saída
+    document.write(mensagemFinal)
 </script>
