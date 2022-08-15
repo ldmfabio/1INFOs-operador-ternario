@@ -18,10 +18,10 @@ Construa um programa que leia um caractere e informe se este caractere é uma vo
 Recebe o preço do produto e calcula o aumento do preço, baseado no seguinte critério:
 | Preço | Produto |
 | --- | --- |
-| Até 280(inclusive) | aumento de 20 % |
-| Até 700(inclusive) | aumento de 15 % |
-| Até 1500(inclusive) | aumento de 10 % |
-| Acima de 1500 | aumento de 5 % |
+| Até 280(inclusive) | Aumento de 20 % |
+| Até 700(inclusive) | Aumento de 15 % |
+| Até 1500(inclusive) | Aumento de 10 % |
+| Acima de 1500 | Aumento de 5 % |
 
 ### **Problema 06: Idade Humana**
 É sabido que os caẽs amadurecem mais rapidamente do que os seres humanos (na verdade, alguns seres humanos parecem nunca amadurecer).
@@ -41,3 +41,28 @@ Converta a nota para conceito, conforme a tabela abaixo:
 | Entre 7.9 e 7.0 | C |
 | Entre 6.9 e 6.0 | D |
 | Entre 5.9 e zero | E |
+
+### **Problema 08: Meio de transporte mais barato**
+Faça um script que peça para o usuário informar o preço do litro do combustível e a quantidade de litros utilizados para se deslocar para o trabalho diariamente.
+Peça também ao programa para o usuário informar o preço do transporte público que deverá pagar para se deslocar ao trabalho diariamente.
+Verifique qual é o meio de transporte mais barato e apresente em tela, especificando quanto custará para ir e voltar do trabalho diariamente.
+
+### **Problema 09: Valor da Hora Trabalhada**
+Faça um script que peça para o usuário informar a quantidade de horas trabalhadas semanalmente e quanto que recebe por hora trabalhada.
+| Horas Trabalhadas | Adicional |
+| :---: | :---: |
+| Até 45 horas (inclusive) | Não haverá adicional |
+| Até 60 horas (inclusive) | Adicional de 20% |
+| Acima de 60 horas | Adicional de 30% |
+
+Apresente o salário final recebido pelo funcionário semanalmente e o preço de cada hora trabalhada.
+
+### **Problema 10: Balanço Financeiro**
+Faça um script que peça para o usuário informar as despesas relacionadas com:
+- Conta de água
+- Conta de energia elétrica
+- Conta de telefone
+- Supermercado
+
+Também peça para o usuário informar o valor que recebe de remuneração mensal (salário), proveniente da sua atuação profissional.
+Verifique se o usuário ganha mais do que recebe e apresente em tela, indicando quanto que sobrou após o pagamento das contas ou quanto que faltou para poder pagar todas as contas previstas.
