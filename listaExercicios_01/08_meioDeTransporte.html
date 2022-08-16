@@ -6,12 +6,15 @@
     // Verifique qual é o meio de transporte mais barato e apresente em tela, especificando quanto custará para ir e voltar do trabalho diariamente.
 
     //Entrada
-
-
+    const precoLitroCombustivel = Number(prompt("informe o preco do litro do combustivel"))
+    const litrosCombustivel = Number(prompt("informe quantos litros de combustivel utilizara"))
+    const precoBuzao = Number(prompt("informe o valor do buzao"))
     //Processamento
-
-    
+    let resultadoNaTela;
+    const precoCarro = precoLitroCombustivel * litrosCombustivel;
+    (precoCarro < precoBuzao) ? resultadoNaTela = `Ir de carro mais barato. custa R$${precoCarro.toFixed(2)}`
+    : (precoBuzao < precoCarro) ? resultadoNaTela = `Ir de onibus e mais barato, custa R$${precoBuzao.toFixed(2)}`
+    : resultadoNaTela = `Os dois possuem o mesmo custo, que é de R$ ${precoCarro.toFixed(2)}`;
     //Saída
-
-    
+    document.write(resultadoNaTela)
 </script>

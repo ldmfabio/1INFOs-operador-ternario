@@ -4,11 +4,13 @@
     //Leia a idade de uma pessoa e informe se ela já chegou à maioridade.Se ela ainda não chegou, informe quantos anos faltam para a maioridade.
 
     //Entrada
-
+    const idade = parseInt(prompt("informe sua idade"))
 
     //Processamento
+    const tempoParaMaiorIdade = 18 - idade;
+    let conceito;
 
-
+    (idade >= 18) ? conceito = "maior de idade" : conceito = "não e maior de idade" + `, ainda faltam ${tempoParaMaiorIdade} anos`
     //Saída
-    
+    document.write(conceito)
 </script>
