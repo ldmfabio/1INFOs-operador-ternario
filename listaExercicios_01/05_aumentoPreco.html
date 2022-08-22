@@ -8,11 +8,25 @@
         //- acima de 1500: aumento de 5 %
     
     //Entrada
-
+    const preco = Number(prompt("Informe o preço do produto:"));
 
     //Processamento
+    let percentualAumento;
+    (preco <= 280) ? percentualAumento = 20
+    : (preco <= 700) ? percentualAumento = 15
+    : (preco <= 1500) ? percentualAumento = 10
+    : percentualAumento = 5;
 
+    const valorAumento = preco * (percentualAumento / 100);
+    const valorFinal = preco + valorAumento;
     
-    //Saída
+    // let valorFinalProduto;
+    // (preco <= 280) ? valorFinalProduto = preco * 1.2
+    // : (preco <= 700) ? valorFinalProduto = preco * 1.15
+    // : (preco <= 1500) ? valorFinalProduto = preco * 1.1
+    // : valorFinalProduto = preco * 1.05;
 
+
+    //Saída
+    document.write("O valor final será R$ " + valorFinal.toFixed(2));
 </script>
