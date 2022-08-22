@@ -8,10 +8,17 @@
         //- acima de 1500: aumento de 5 %
     
     //Entrada
-
+    const precoProduto = Number(prompt("Informe o preço do produto:"));
 
     //Processamento
+    let percentualAumento;
+    (precoProduto <= 280) ? percentualAumento = 20
+    : (precoProduto <= 700) ? percentualAumento = 15
+    : (precoProduto <= 1500) ? percentualAumento = 10
+    : percentualAumento = 5;
 
+    const valorAumento = precoProduto * percentualAumento / 100;
+    const valorFinalProduto = precoProduto + valorAumento;
     
     //Saída
 
