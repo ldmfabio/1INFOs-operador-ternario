@@ -4,11 +4,13 @@
     //Construa um programa que leia um caractere e informe se este caractere é uma vogal.
 
     //Entrada
-
+    const letra = prompt("Digite uma letra:").toLowerCase();
 
     //Processamento
+    let resultadoFinal;
+    (letra === "a" || letra === "e" || letra === "i" || letra === "o" || letra === "u") ? resultadoFinal = `A letra ${letra} É uma VOGAL!`
+    : resultadoFinal = `A letra ${letra} NÃO É uma VOGAL!`;
 
-    
     //Saída
-
+    document.write(resultadoFinal);
 </script>

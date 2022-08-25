@@ -7,14 +7,23 @@
     // - Conta de telefone
     // - Supermercado
     // Também peça para o usuário informar o valor que recebe de remuneração mensal (salário), proveniente da sua atuação profissional.
-    // Verifique se o usuário ganha mais do que recebe e apresente em tela, indicando quanto que sobrou após o pagamento das contas ou quanto que faltou para poder pagar todas as contas previstas.
+    // Verifique se o usuário recebe mais do que gasta e apresente em tela, indicando quanto que sobrou após o pagamento das contas ou quanto que faltou para poder pagar todas as contas previstas.
 
     //Entrada
-
+    const contaAgua = Number(prompt("Digite o preço da conta de água:"));
+    const contaEnergiaEletrica = Number(prompt("Digite o preço da conta de energia elétrica:"));
+    const contaTelefone = Number(prompt("Digite o preço da conta de telefone:"));
+    const contaMercado = Number(prompt("Digite o preço do mercado:"));
+    const salarioMensal = Number(prompt("Digite o valor da remuneração mensal (Salário):"));
 
     //Processamento
+    const valorSobra = salarioMensal - (contaAgua + contaEnergiaEletrica + contaTelefone + contaMercado);
+    
+    let resultadoFinal;
+    (valorSobra >= 0) ? resultadoFinal = `Você recebeu mais do que gastou! Sobraram R$ ${valorSobra.toFixed(2)}.`
+    : resultadoFinal = `Você gastou mais do que recebeu! Faltaram R$ ${valorSobra.toFixed(2)}.`;
 
-    
     //Saída
-    
+    document.write(resultadoFinal);
+
 </script>

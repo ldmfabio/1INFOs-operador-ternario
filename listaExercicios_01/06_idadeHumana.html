@@ -8,11 +8,22 @@
     // - cães grandes: fator 7.
 
     //Entrada
-
+    const idadeCao = Number(prompt("Informe a idade do seu cão/cadela:"));
+    const porteCao = prompt("Informe o porte do cão/cadela (P-Pequeno | M-Médio | G-Grande):").toLowerCase();
 
     //Processamento
+    let idadeHumana;
+    (porteCao === "p") ? idadeHumana = idadeCao * 5
+    : (porteCao === "m") ? idadeHumana = idadeCao * 6
+    : (porteCao === "g") ? idadeHumana = idadeCao * 7
+    : idadeHumana = 0;
 
+    idadeHumana = (porteCao === "p") ? idadeCao * 5
+    : (porteCao === "m") ? idadeCao * 6
+    : (porteCao === "g") ? idadeCao * 7
+    : idadeHumana = 0;
     
     //Saída
-
+    (idadeHumana === 0) ? document.write(`Porte do cão/cadela incorreto!`)
+    : document.write(`A idade humana do cão/cadela é de ${idadeHumana} anos!`);
 </script>
