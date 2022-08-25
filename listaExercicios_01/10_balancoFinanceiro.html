@@ -10,11 +10,18 @@
     // Verifique se o usuário ganha mais do que recebe e apresente em tela, indicando quanto que sobrou após o pagamento das contas ou quanto que faltou para poder pagar todas as contas previstas.
 
     //Entrada
-
+    const contaAgua = Number(prompt("Informe o valor da conta de água:"));
+    const contaEnergia = Number(prompt("Informe o valor da conta de energia elétrica:"))
+    const contaFone = Number(prompt("Informe o valor da conta de telefone:"));
+    const contaMercado = Number(prompt("Informe o valor da conta do mercado:"));
+    const valorSalario = Number(prompt("Informe a renda mensal:"));
 
     //Processamento
-
+    const valorSobra = valorSalario - (contaAgua + contaEnergia + contaFone + contaMercado);
+    let resultadoFinal;
+    (valorSobra >= 0) ? resultadoFinal = `Você recebeu mais do que pagou. Sobraram R$ ${valorSobra.toFixed(2)}.`
+    : resultadoFinal = `Você pagou mais do que recebeu. Faltaram R$ ${valorSobra.toFixed(2)}. `;
     
     //Saída
-    
+    document.write(resultadoFinal);
 </script>

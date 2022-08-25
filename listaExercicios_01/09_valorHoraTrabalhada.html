@@ -8,11 +8,19 @@
     // Apresente o salário final recebido pelo funcionário semanalmente e o preço de cada hora trabalhada.
 
     //Entrada
-
-
+    const horasTrabalhadas = Number(prompt("Informe as horas trabalhadas:"));
+    const valorHoraTrabalhada = Number(prompt("Informe quanto recebe por hora trabalhada"));
+    
     //Processamento
+    let percentual;
+    (horasTrabalhadas <= 45) ? percentual = 0
+    : (horasTrabalhadas <= 60) ? percentual = 20
+    : percentual = 30;
 
+    const salarioNormal = horasTrabalhadas * valorHoraTrabalhada;
+    const salarioFinal = salarioNormal + (salarioNormal * percentual / 100);
+    const novoValorHora = salarioFinal / horasTrabalhadas;
     
     //Saída
-
+    document.write(`O salário final será de R$ ${salarioFinal.toFixed(2)} e o valor recebido por hora será de R$ ${novoValorHora.toFixed(2)}`);
 </script>
